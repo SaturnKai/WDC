@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: background 250ms ease;
+}
+
+body.dark {
+  background: #131313;
+}
+
+body.light {
+  background: #fff;
+}
+
+body.dark .title {
+  color: #fff;
+}
+
+body.light .title {
+  color: #000;
+}
+
+.title {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.container {
+  text-align: center;
+}
+
+.description {
+  color: #777;
+  margin-top: 10px;
+  margin-inline: 80px;
+  line-height: 1.8;
+}
+
+.switch {
+  background: #4287f5;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 1em 2em;
+  cursor: pointer;
+
+  margin-top: 40px;
+
+  transition: background 80ms ease;
+}
+
+.switch:hover {
+  background: #356fcc;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 1rem;
+}
+
+.link {
+  color: #f56b38;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #d45b2f;
+}
+
+.bold {
+  color: #999;
+  font-weight: 700;
+}
+
+.image {
+  width: 200px;
+  margin-top: 80px;
+  border-radius: 8px;
+
+  filter: blur(5px);
+
+  transition: transform 100ms ease, filter 100ms ease;
+}
+
+.image:hover {
+  filter: blur(0);
+  transform: scale(1.1);
+}
