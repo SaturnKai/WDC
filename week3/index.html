@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Week 3 - Blog</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+    *,
+    *::before,
+    *::after {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      color-scheme: dark;
+    }
+
+    body {
+      background: #202020;
+    }
+
+    .header {
+      margin: 40px;
+    }
+
+    .header .title {
+      color: #fff;
+    }
+
+    .header .author {
+      color: #ccc;
+      margin-top: 10px;
+
+      padding-bottom: 20px;
+      border-bottom: 2px solid #fff2;
+    }
+
+    .posts {
+      margin: 40px;
+      margin-top: 60px;
+    }
+
+    .post .title {
+      font-size: 1.2rem;
+      color: #5ca5cc;
+    }
+
+    .post .desc {
+      color: #fff;
+      margin-top: 10px;
+
+      line-height: 1.8;
+      max-width: 800px;
+    }
+
+    a {
+      color: #4197f2;
+      text-decoration: none;
+    }
+
+    img {
+      width: 400px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .footer {
+      margin-top: 80px;
+      margin-bottom: 20px;
+      color: #4197f2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Bread Blog 🍞</h1>
+    <p class="author">Created By: <b>Brandon G.</b </p>
+  </div>
+
+  <div class="posts">
+    <div class="post">
+      <h2 class="title"><u>Garage Door Security System</u> • Sep 30, 2023</h2>
+      <pre class="desc">
+        My name
+        is       Brandon G
+          and this is      my <i>first</i>
+            <font color="red" size="4">blog post !!!</font>
+      </pre>
+      <p class="desc">
+        On a more serious note, yesterday I was able to connect a door / window contact sensor to my garage door, and
+        utilize an
+        <a href="https://www.espressif.com/en/products/socs/esp32">ESP32</a> with a 433MHz RF receiver to receive the
+        binary data sent from the transmitter when my garage door is opened or closed. Once the state of the sensor
+        changes, it sends an HTTP post request data to my webserver, which then sends a push notifcation to my phone
+        using the <a href="https://pushover.net/">Pushover</a> API.
+      </p>
+
+      <abbr>
+        <p class="desc">Here's the sensor I used for this project, which I got from <b>AliExpress</b>:</p>
+
+        <img src="https://ae01.alicdn.com/kf/Hdd7a0077e4a2481aaf36e9c7f37e9a75F.jpg" alt="door sensor" />
+
+    </div>
+  </div>
+
+  <center class="footer"><b>Thanks for visiting!</b></center>
+
+</body>
+
+</html>
