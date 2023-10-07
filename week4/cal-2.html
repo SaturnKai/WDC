@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+    *,
+    *::before,
+    *::after {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    table {
+      padding: 20px;
+    }
+
+    td {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .selected {
+      background: #34b1eb55;
+      border-radius: 50%;
+    }
+
+    .table-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid black;
+
+    }
+
+    h2 {
+
+      text-align: center;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin: 20px;
+    }
+
+    th {
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    header {
+      background: #c7c7c799;
+      padding: 15px;
+    }
+
+    span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .picker {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      padding: 20px 40px;
+    }
+
+    .title {
+      margin-top: 20px;
+    }
+
+    nav {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+  <title>Calendars - Example 2</title>
+</head>
+
+<body>
+  <h1 class="title">Example 2</h1>
+  <div class="table-container">
+    <header>
+      <h1>2023</h1>
+      <h1>Sat, Oct 07</h1>
+    </header>
+    <div class="nav">
+      <span>&#60;</span>
+      <h2>OCTOBER 2023</h2>
+      <span>&#62;</span>
+    </div>
+    <table>
+      <tr>
+        <th>S</th>
+        <th>M</th>
+        <th>T</th>
+        <th>W</th>
+        <th>T</th>
+        <th>F</th>
+        <th>S</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td class="selected">7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>30</td>
+        <td>31</td>
+      </tr>
+    </table>
+    <div class="picker">
+      <a href="#">CANCEL</a>
+      <a href="#">OK</a>
+    </div>
+  </div>
+
+  <nav>
+    <a href="cal-1.html">Previous</a>
+    <a href="cal-3.html">Next</a>
+  </nav>
+
+</body>
+
+</html>
