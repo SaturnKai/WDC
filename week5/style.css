@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-title {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.title {
+  margin-inline: 20px;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #52525222;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.button {
+  background: #10aae0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 50ms ease;
+}
+
+.button:hover {
+  background: #189dcc;
+}
+
+.button.selected {
+  background: #fff;
+  color: #10aae0;
+  border: 1px solid #10aae0;
+}
+
+.button.selected:hover {
+  background: #53535311;
+}
+
+.separator {
+  border-bottom: 1px solid #52525222;
+  margin-inline: 20px;
+}
+
+.recipe-information {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.image {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin-inline: 150px;
+  line-height: 1.5;
+}
+
+.list {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.secondary-dir {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.secondary-dir li {
+  margin-bottom: 8px;
+}
+
+.direction-desc {
+  margin-top: 40px;
+  margin-inline: 20px;
+  line-height: 1.5;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-inline: 20px;
+  margin-top: 20px;
+}
+
+.comment {
+  background: #f5f54255;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.content {
+  margin-bottom: 10px;
+}
+
+.links {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.link {
+  display: block;
+  margin-bottom: 10px;
+}
